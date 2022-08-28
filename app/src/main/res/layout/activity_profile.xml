@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackish_blue"
+    android:backgroundTint="@color/blackish_blue">
+
+
+    <ImageView
+        android:layout_marginTop="20sp"
+        android:id="@+id/profile_image_view"
+        android:layout_width="223dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profile" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp" />
+
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating_bar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="UserName:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/phoneNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userNameTextView"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="PhoneNumber:"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/MyItemsButton"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/phoneNumberTextView"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="My items"
+        />
+
+
+
+</RelativeLayout>
